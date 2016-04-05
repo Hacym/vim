@@ -19,6 +19,8 @@ set smartcase     " ignore case if search pattern is all lowercase,
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
+imap <S-Tab> <C-o><<
+
 if &t_Co >= 256 || has("gui_running")
 	    colorscheme mustang
 	endif
@@ -38,3 +40,7 @@ set mouse=a
 nnoremap <S-tab> :tabprevious<CR>
 nnoremap <tab>   :tabnext<CR>
 nnoremap <C-t>     :tabnew<CR>
+
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
