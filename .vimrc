@@ -94,14 +94,18 @@ Plugin 'sjl/badwolf'
 " Fzf
 set rtp+=/usr/local/opt/fzf
 
-Plugin 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_guide_size = 1
-let g:indent_guides_color_change_percent = 3
-let g:indent_guides_enable_on_vim_startup = 1
-
 Plugin 'scrooloose/nerdtree'
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jistr/vim-nerdtree-tabs'
+
+Plugin 'suan/vim-instant-markdown'
+
+Plugin 'chrisbra/csv.vim'
+
+Plugin 'fisadev/vim-isort'
+let g:vim_isort_map = '<C-i>'
+:autocmd BufWritePre *.py :Isort
+:autocmd BufWritePre *.py :Black
