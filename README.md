@@ -8,3 +8,4 @@ My preferred vim settings and plugins
 3. `cp .vim/.vimrc ~`
 4. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 5. `vim` and then `PluginInstall`
+6. Do install of YCM (see [YCM site](https://valloric.github.io/YouCompleteMe/#installation))
