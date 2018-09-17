@@ -104,8 +104,3 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'suan/vim-instant-markdown'
 
 Plugin 'chrisbra/csv.vim'
-
-Plugin 'fisadev/vim-isort'
-let g:vim_isort_map = '<C-i>'
-:autocmd BufWritePre *.py :Isort
-:autocmd BufWritePre *.py :Black
